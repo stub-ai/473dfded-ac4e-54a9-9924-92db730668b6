@@ -1,13 +1,14 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from '../components/Header'
+import Login from '../components/Login'
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    </main>
+    <div className="min-h-screen bg-gray-100">
+      <Header />
+      <main className="p-6">
+        <h1 className="text-3xl font-bold mb-4">Welcome to our Jewelry Store</h1>
+        <Login />
+      </main>
+    </div>
   )
 }
